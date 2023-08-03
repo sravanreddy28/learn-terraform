@@ -1,3 +1,5 @@
+#plain variables
+
 variable "fruitname"{
 
         default = "apple"
