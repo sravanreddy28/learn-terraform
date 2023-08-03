@@ -6,5 +6,5 @@ variable "fruits" {
   ]
   }
 output "fruits" {
-  value = try (var.fruits[3])
+  value = var.fruits[2]
 }
