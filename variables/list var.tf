@@ -31,15 +31,15 @@ variable "deepu" {
     "in bhashyam school top10"
   ]
 }
-output "deepu" {
+output "always" {
   value = var.deepu[0]
 }
 output "was" {
   value = var.deepu[1]
 }
 output "will_be" {
-  value = var.deepu
+  value = var.deepu[2]
 }
 output "studying" {
-  value = var.deepu
+  value = var.deepu[3]
 }
