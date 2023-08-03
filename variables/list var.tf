@@ -21,7 +21,7 @@ output "deepika" {
   value = var.deepika
 }
 
-# calling with indexs
+# calling with indexes
 
 variable "deepu" {
   default = [

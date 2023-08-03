@@ -16,3 +16,7 @@ variable "sravan" {
 output "sravan" {
         value = var.sravan
 }
+
+output "fruits_output" {
+        value = [var.sravan , var.fruitname]
+}
