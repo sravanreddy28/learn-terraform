@@ -10,6 +10,7 @@ output "fruits" {
 }
 
 #practice
+
 variable "deepika" {
   default = [
   "studying",
@@ -18,4 +19,27 @@ variable "deepika" {
 }
 output "deepika" {
   value = var.deepika
+}
+
+# calling with indexs
+
+variable "deepu" {
+  default = [
+  "studying",
+    "playing",
+    "eating on time",
+    "in bhashyam school top10"
+  ]
+}
+output "deepu" {
+  value = var.deepu[0]
+}
+output "was" {
+  value = var.deepu[1]
+}
+output "will_be" {
+  value = var.deepu
+}
+output "studying" {
+  value = var.deepu
 }
