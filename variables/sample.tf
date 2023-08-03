@@ -1,4 +1,5 @@
-variable = "fruitname"{
+variable "fruitname"{
+
         default = "apple"
 }
 output "fruitname" {
