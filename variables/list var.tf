@@ -1,9 +1,10 @@
 variable "fruits" {
   default = [
     "apple",
-    "bananna"
+    "bananna",
+    "mango"
   ]
   }
 output "fruits" {
-  value = var.fruits[0]
+  value = var.fruits[0][3]
 }
