@@ -11,6 +11,6 @@ variable "sravan" {
 
         default = "software engineer"
 }
-output "software_engineer" {
+output "sravan" {
         value = var.sravan
 }
