@@ -47,6 +47,6 @@ for_each  = var.component
   name    = lookup(each.value,"name",null)
   type    = "A"
   ttl     = 30
-  records = [lookup(lookup(aws_instance.instance,each.key,null),private_ip,null)]
+  records = [lookup(lookup(aws_instance.instance,each.key,null),"private_ip",null)]
   allow_overwrite = true
 }
