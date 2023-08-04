@@ -33,10 +33,11 @@ resource "aws_instance" "instance" {
   vpc_security_group_ids = var.vpc_security_group_ids
 
   tags = {
-    Name = lookup ( each.key, null )
+    Name = var.component
   }
 }
-#resource "aws_route53_record" "frontend" {
+#resource "aws_route53_record" "record" {
+#for_each  = var.component
 #  zone_id = "Z05383332D04XQ1MILNHI"
 #  name    = "frontend-dev.sdevops28.online"
 #  type    = "A"
