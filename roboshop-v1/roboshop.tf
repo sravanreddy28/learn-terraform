@@ -12,16 +12,16 @@ variable "vpc_security_group_ids" {
 
 variable "component" {
   default = {
-    frontend = {}
-    mongodb  = {}
-    catalogue = {}
-    redis = {}
-    user = {}
-    cart = {}
-    mysql = {}
-    shipping = {}
-    rabbitmq = {}
-    payment = {}
+    frontend = {name = "frontend-dev"}
+    mongodb  = {name = "mongodb-dev"}
+    catalogue = {name = "catalogue-dev"}
+    redis = {name = "redis-dev"}
+    user = {name = "user-dev"}
+    cart = {name = "cart-dev"}
+    mysql = {name = "mysql-dev"}
+    shipping = {name = "shipping-dev"}
+    rabbitmq = {name = "rabbitmq-dev"}
+    payment = {name = "payment-dev"}
 
   }
 }
@@ -33,7 +33,7 @@ resource "aws_instance" "instance" {
   vpc_security_group_ids = var.vpc_security_group_ids
 
   tags = {
-    Name = var.component
+    Name = lookup(each.value,"name",null )
   }
 }
 #resource "aws_route53_record" "record" {
