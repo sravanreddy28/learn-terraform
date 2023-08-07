@@ -43,3 +43,22 @@ output "will_be" {
 output "studying" {
   value = var.deepu[3]
 }
+#parctice
+
+variable "mummy" {
+  default = [
+  "working",
+    "watching",
+    "cooking"
+  ]
+}
+
+output "more" {
+  value = "var.mummy"[0]
+}
+output "lite" {
+  value = "var.mummy"[1]
+}
+output "everday" {
+  value = "var.mummy"[2]
+}
