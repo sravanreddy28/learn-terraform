@@ -7,7 +7,7 @@ terraform {
 }
 
 variable "test" {
-  default = test
+  default = "sravan"
 }
 output "hello" {
   value = "var.test"
