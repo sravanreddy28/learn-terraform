@@ -10,5 +10,5 @@ variable "test" {
   default = "sravan"
 }
 output "hello" {
-  value = "var.test"
+  value = var.test
 }
