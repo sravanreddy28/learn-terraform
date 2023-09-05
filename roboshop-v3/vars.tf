@@ -12,8 +12,8 @@ variable "components" {
       name          = "frontend"
       instance_type = "t3.small"
     }
-    mangodb = {
-      name          = "mangodb"
+    mongodb = {
+      name          = "mongodb"
       instance_type = "t3.small"
     }
     cart = {
