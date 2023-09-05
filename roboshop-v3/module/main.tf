@@ -33,5 +33,3 @@ ansible-playbook -i ${var.name}-dev.sdev28.online, main.yml -e ansible_user=cent
 EOF
   }
 }
-
-t
