@@ -48,5 +48,5 @@ variable "components" {
       name          = "catalogue"
       instance_type = "t3.small"
     }
-    }
   }
+}
