@@ -29,7 +29,8 @@ resource "null_resource" "ansible" {
     command = <<EOF
 cd/home/centos/roboshop-ansible
 git pull
-ansible-playbook -i ${var.name}-dev.sdevops28.online, -e ansible_user=centos -e ansible_password=DevOps321 main.yml
+sleep 30
+ansible-playbook -i ${var.name}-dev.sdevops28.online, main.yml -e ansible_user=centos -e ansible_password=DevOps321 -e component=${var.name}
 EOF
   }
 }
